@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/myListView"
+        android:layout_width="387dp"
+        android:layout_height="440dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <View
+        android:id="@+id/currentEventView"
+        android:layout_width="507dp"
+        android:layout_height="269dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toEndOf="@+id/myListView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/currentEventTextView"
+        android:layout_width="474dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="40px"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/currentEventView"
+        app:layout_constraintStart_toStartOf="@+id/currentEventView"
+        app:layout_constraintTop_toTopOf="@+id/currentEventView" />
+
+    <View
+        android:id="@+id/nextEventView"
+        android:layout_width="244dp"
+        android:layout_height="222dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/myListView"
+        app:layout_constraintTop_toBottomOf="@+id/currentEventView" />
+
+    <ImageView
+        android:id="@+id/QRCode"
+        android:layout_width="199dp"
+        android:layout_height="191dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nextEventView"
+        app:layout_constraintTop_toBottomOf="@+id/currentEventView"
+        app:srcCompat="@drawable/websiteqr" />
+
+    <TextView
+        android:id="@+id/nextEventTextView"
+        android:layout_width="224dp"
+        android:layout_height="113dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="40px"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/nextEventView"
+        app:layout_constraintEnd_toEndOf="@+id/nextEventView"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/nextEventView"
+        app:layout_constraintTop_toTopOf="@+id/nextEventView" />
+
+    <TextView
+        android:id="@+id/currentEventTopTextView"
+        android:layout_width="84dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="left|center_vertical"
+        android:text="Agora"
+        android:textColor="#000000"
+        android:textSize="30px"
+        app:layout_constraintStart_toStartOf="@+id/currentEventView"
+        app:layout_constraintTop_toTopOf="@+id/currentEventView" />
+
+    <TextView
+        android:id="@+id/nextEventTopTextView"
+        android:layout_width="86dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Depois"
+        android:textColor="#000000"
+        android:textSize="30px"
+        app:layout_constraintStart_toStartOf="@+id/nextEventView"
+        app:layout_constraintTop_toTopOf="@+id/nextEventView" />
+
+    <TextView
+        android:id="@+id/nextEventTopTextView2"
+        android:layout_width="199dp"
+        android:layout_height="34dp"
+        android:gravity="center_horizontal"
+        android:text="Book Room"
+        android:textColor="#000000"
+        android:textSize="30px"
+        app:layout_constraintBottom_toTopOf="@+id/QRCode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nextEventView" />
+
+    <TextView
+        android:id="@+id/currentEventDescrTextView"
+        android:layout_width="473dp"
+        android:layout_height="122dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:textColor="#000000"
+        android:textSize="30px"
+        app:layout_constraintBottom_toBottomOf="@+id/currentEventView"
+        app:layout_constraintEnd_toEndOf="@+id/currentEventView"
+        app:layout_constraintStart_toStartOf="@+id/currentEventView" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="239dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="4.1.28"
+        android:textColor="#000000"
+        android:textSize="60px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="123dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="right"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="30px"
+        app:layout_constraintEnd_toEndOf="@+id/currentEventView"
+        app:layout_constraintTop_toTopOf="@+id/currentEventView" />
+
+    <TextView
+        android:id="@+id/livreTextView"
+        android:layout_width="468dp"
+        android:layout_height="154dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="60px"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/currentEventDescrTextView"
+        app:layout_constraintEnd_toEndOf="@+id/currentEventView"
+        app:layout_constraintStart_toStartOf="@+id/currentEventView"
+        app:layout_constraintTop_toTopOf="@+id/currentEventView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
