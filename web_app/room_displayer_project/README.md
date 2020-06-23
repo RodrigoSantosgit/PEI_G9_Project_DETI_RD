@@ -1,1 +1,1 @@
-Web App Project Configration and Settings
+Web App Project Configuration and Settings
